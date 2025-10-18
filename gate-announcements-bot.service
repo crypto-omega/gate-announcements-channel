@@ -4,9 +4,8 @@ After=network.target
 
 [Service]
 Type=simple
-User=%i
 WorkingDirectory=/data0/tsl/Dropbox/Repos/crypto-omega/gate-announcements-channel
-ExecStart=/usr/bin/python3 gate_announcements_bot.py
+ExecStart=/data0/tsl/base/bin/python gate_announcements_bot.py
 Restart=always
 RestartSec=10
 Environment=PYTHONUNBUFFERED=1
